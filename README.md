@@ -12,14 +12,19 @@ Howto use it
 ============
 
 NB this test takes some minutes to run due to download time:
+```python
 >>> from candy.candy import Candy
 >>> import os
+```
 
 Create a Candy object:
+```python
 >>> c = Candy('massimoazzolini', howmany=1)
 >>> namedownloadedvideo = u'Plone video used for testing purposes'
+```
 
 Let's download it:
+```python
 >>> c.run()
 Analyzing page 1
 downloaded Plone video used for testing purposes
@@ -29,7 +34,7 @@ downloaded Plone video used for testing purposes
 True
 
 >>> os.remove(filename)
-
+```
 
 Disclaimers
 ===========
